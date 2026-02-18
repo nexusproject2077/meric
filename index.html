@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meric Koken — Développeur Full-Stack Junior</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <span class="loader-bracket">&lt;</span>
+    <span class="loader-letter">M</span>
+    <span class="loader-slash">/</span>
+    <span class="loader-bracket">&gt;</span>
+    <p>Chargement...</p>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">&lt;M/&gt;</a>
+    <ul class="nav-links">
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mobile-link">Accueil</a></li>
+      <li><a href="#skills" class="mobile-link">Compétences</a></li>
+      <li><a href="#projects" class="mobile-link">Projets</a></li>
+      <li><a href="#about" class="mobile-link">À propos</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="home-content">
+      <div class="home-left">
+        <div class="badge">
+          <span class="dot"></span> Disponible pour travailler
+        </div>
+        <h1 class="hero-name">Meric Koken</h1>
+        <p class="hero-desc">
+          Je développe des applications web modernes <br/>
+          avec HTML, CSS, JavaScript, PHP.<br/>
+          Passionné par<br/>
+          l'architecture logicielle,<br/>
+          la performance et le code propre.
+        </p>
+        <div class="hero-links">
+          <a href="https://github.com/merickoken" target="_blank" class="btn-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.88 10.95.58.1.79-.25.79-.56v-2c-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.07.78 2.15v3.19c0 .31.21.67.8.56C20.21 21.42 23.5 17.1 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/merickoken" target="_blank" class="btn-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.56V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:merickoken@gmail.com" class="btn-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+
+      <div class="home-right">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">terminal.ts</span>
+          </div>
+          <pre class="terminal-code"><code><span class="kw">const</span> <span class="var">about</span> = {
+  <span class="key">name</span>: <span class="str">'Meric Koken'</span>,
+  <span class="key">role</span>: <span class="str">'Dev Full-Stack
+          Junior'</span>,
+  <span class="key">skills</span>: [
+    <span class="str">'PHP'</span>,
+    <span class="str">'JavaScript'</span>,
+    <span class="str">'HTML'</span>,
+    <span class="str">'CSS'</span>,
+    <span class="str">'MySQL'</span>
+  ],
+  <span class="key">passion</span>: <span class="str">'Code, Web Design'</span>
+};</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-number">01</div>
+    <h2 class="section-title">Compétences</h2>
+    <p class="section-sub">Les technologies et outils que j'utilise pour créer, développer et designer mes projets.</p>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card-header"><span class="skill-icon">⚛️</span><h3>Frontend</h3></div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"/>
+            <span>HTML</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"/>
+            <span>CSS</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-header"><span class="skill-icon">⚙️</span><h3>Backend</h3></div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"/>
+            <span>PHP</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/>
+            <span>MySQL</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"/>
+            <span>Node.js</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-header"><span class="skill-icon">🛠️</span><h3>Outils</h3></div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"/>
+            <span>VS Code</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/>
+            <span>Git</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/>
+            <span>GitHub</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/>
+            <span>Docker</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-header"><span class="skill-icon">🎨</span><h3>Design</h3></div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"/>
+            <span>Figma</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"/>
+            <span>Photoshop</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-plain.svg" alt="After Effects"/>
+            <span>After Effects</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator"/>
+            <span>Illustrator</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-number">02</div>
+    <h2 class="section-title">Projets Phares</h2>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-num">01</div>
+        <h3 class="project-title">Nexus Social – Réseau Social</h3>
+        <p class="project-desc">
+          Nexus Social est une plateforme de réseau social complète avec authentification utilisateur,
+          messagerie en temps réel, système de gamification, fil d'actualité et optimisation mobile.
+          Architecture MVC avec PHP, JavaScript et MySQL.
+        </p>
+        <div class="project-tags">
+          <span>PHP</span>
+          <span>JavaScript</span>
+          <span>MySQL</span>
+          <span>WebSocket</span>
+        </div>
+        <a href="#" class="project-link">Voir le projet →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">02</div>
+        <h3 class="project-title">FLUX – E-Commerce Streetwear</h3>
+        <p class="project-desc">
+          Plateforme e-commerce dédiée au streetwear avec gestion de catalogue,
+          panier d'achat, système de commande et interface d'administration complète.
+          Design soigné orienté vers l'expérience utilisateur.
+        </p>
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>PHP</span>
+        </div>
+        <a href="#" class="project-link">Voir le projet →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">03</div>
+        <h3 class="project-title">SAE 105-106 – Projet Académique</h3>
+        <p class="project-desc">
+          Chef de projet pour un groupe de quatre personnes dans le cadre des SAE 105-106
+          du BUT MMI. Création de documentation de gestion de projet, diagrammes GANTT
+          et développement web complet.
+        </p>
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Gestion de projet</span>
+        </div>
+        <a href="#" class="project-link">Voir le projet →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-number">03</div>
+    <h2 class="section-title">À Propos de Moi</h2>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Développeur Full-Stack Junior avec <strong>6 ans d'expérience</strong> en développement web depuis 2020,
+          animé par la recherche de précision, de performance et de maîtrise technique. J'accorde une importance
+          particulière à l'architecture logicielle et aux bonnes pratiques :
+          écrire un code propre et durable est une discipline, pas une option.
+        </p>
+        <p>
+          J'aime analyser et résoudre des problèmes complexes, optimiser
+          les performances et développer des projets complets du design au déploiement.
+          Je travaille principalement avec <strong>HTML, CSS, JavaScript et PHP</strong>,
+          avec une solide expérience en gestion de bases de données MySQL.
+        </p>
+        <p>
+          Actuellement étudiant en BUT MMI (Métiers du Multimédia et de l'Internet) à l'IUT de Troyes,
+          je développe également mon activité freelance en parallèle de mes études.
+          Toujours en train d'apprendre, de créer et d'explorer de nouvelles technologies.
+        </p>
+        <a href="#" class="btn-cv">Voir mon CV</a>
+      </div>
+
+      <div class="about-terminal">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">about.ts</span>
+          </div>
+          <pre class="terminal-code"><code><span class="kw">const</span> <span class="var">about</span> = {
+  <span class="key">name</span>: <span class="str">'Meric Koken'</span>,
+  <span class="key">role</span>: <span class="str">'Dev Full-Stack
+          Junior'</span>,
+  <span class="key">location</span>: <span class="str">'Troyes, FR'</span>,
+  <span class="key">interests</span>: [
+    <span class="str">'Code Propre'</span>,
+    <span class="str">'Architecture Système'</span>,
+    <span class="str">'Open Source'</span>
+  ],
+  <span class="key">currentlyLearning</span>: <span class="str">'Symfony'</span>
+};</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-number">04</div>
+    <h2 class="section-title">Me Contacter</h2>
+    <p class="section-sub">
+      Vous avez un projet ou une question ? N'hésitez pas à me contacter.
+      Je suis toujours ouvert aux nouvelles opportunités et collaborations intéressantes.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <a href="mailto:merickoken@gmail.com" class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-val">merickoken@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://github.com/merickoken" target="_blank" class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.88 10.95.58.1.79-.25.79-.56v-2c-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.07.78 2.15v3.19c0 .31.21.67.8.56C20.21 21.42 23.5 17.1 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+          </div>
+          <div>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-val">@MericKoken</span>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/merickoken" target="_blank" class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.56V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0z"/></svg>
+          </div>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-val">merickoken</span>
+          </div>
+        </a>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Sujet</label>
+          <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Envoyer le message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Meric Koken.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
